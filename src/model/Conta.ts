@@ -24,6 +24,10 @@ export class Conta {
         return this._saldo;
     }
 
+    public get numero(): string {
+        return this._numeroConta.numero;
+    }
+
     public depositar(valor: number): void {
         this.validarValor(valor);
         
